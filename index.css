@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: gray;
+  background: #ffffff;
+  background: radial-gradient(at center bottom, #ffffff, #0d8eff);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+form,
+.hidden {
+  height: 500px;
+  width: 500px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  border: 3px solid rgba(0, 0, 255, 0.178);
+  background: #1f29f7;
+  background: linear-gradient(135deg, #1f2af760, #01f2ff5d);
+  padding: 10px;
+}
+
+form h1 {
+  font-weight: bold;
+  color: rgb(0, 0, 68);
+}
+
+form input[type='number'] {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+form input[type='submit'] {
+  width: 50%;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+form input[type='submit']:hover {
+  width: 55%;
+  background: gainsboro;
+}
+
+form span {
+  color: rgb(0, 0, 68);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.enderecos {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.enderecos p {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(0, 0, 68);
+}
+
+.hidden {
+  display: none;
+}
+.entrada {
+  animation: entrada 1s ease-in-out;
+}
+
+@keyframes entrada {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
